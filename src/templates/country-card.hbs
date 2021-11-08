@@ -1,0 +1,13 @@
+<article class='card'>
+  <div class='card__content'>
+    <img src='{{#with flags}}{{png}}{{/with}}' alt='{{name.official}}' class='card__image' />
+    <h2 class='card__name'>{{name.official}}</h2>
+    <ul class='card__list'>
+      <li class='card__item'>Population: {{population}}</li>
+      <li class='card__item'>Languages: {{#each languages}}
+    <span>{{this}}</span>
+  {{/each}}</li>
+      <li class='card__item'>Capital:  {{capital}}</li>
+    </ul>
+  </div>
+

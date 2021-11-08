@@ -1,0 +1,8 @@
+{{#each this}}
+  <li class='list__item'>
+    <img src='{{#with flags}}{{png}}{{/with}}' alt='{{name.official}}' class='list__image' />
+    <p class='list__descr'>
+      {{name.official}}
+    </p>
+  </li>
+{{/each}}
