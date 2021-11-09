@@ -4,7 +4,7 @@ import { Notify } from 'notiflix';
 import countriesListTemplate from './templates/countries-list.hbs';
 import countryCardTemplate from './templates/country-card.hbs';
 import CountriesApiService from './js/countries-api-service';
-
+import 'animate.css';
 const DEBOUNCE_DELAY = 300;
 
 const refs = {
@@ -25,10 +25,7 @@ function onSearch(e) {
 
   countriesApiService.query = e.target.value.trim();
 
-  countriesApiService
-    .fetchCards()
-    .then(checkDataLength)
-    .catch(error => Notify.failure(error));
+  countriesApiService.fetchCards().then(checkDataLength).catch(Notify.failure);
 }
 
 function checkDataLength(countries) {

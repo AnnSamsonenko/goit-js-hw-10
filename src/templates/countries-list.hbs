@@ -1,6 +1,6 @@
 {{#each this}}
-  <li class='list__item'>
-    <img src='{{#with flags}}{{png}}{{/with}}' alt='{{name.official}}' class='list__image' />
+  <li class='list-group-item country-item animate__animated animate__fadeInUp'>
+    <img src='{{#with flags}}{{svg}}{{/with}}' alt='{{name.official}}' class='rounded' />
     <p class='list__descr'>
       {{name.official}}
     </p>
