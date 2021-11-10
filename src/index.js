@@ -49,3 +49,7 @@ function clearMarkup() {
   refs.countryList.innerHTML = '';
   refs.countryCard.innerHTML = '';
 }
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
